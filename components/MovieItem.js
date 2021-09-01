@@ -1,5 +1,5 @@
 import { EMPTY_MOVIE_URL, IMAGE_URL } from '../config';
-import Link from 'next/Link';
+import Link from 'next/link';
 import { MovieCard } from './styles/MovieCard';
 
 const MovieItem = ({ movie }) => {

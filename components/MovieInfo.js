@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 
 import { IMAGE_URL, EMPTY_PERSON_URL, EMPTY_MOVIE_URL } from '../config';
 

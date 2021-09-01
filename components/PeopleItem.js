@@ -1,5 +1,5 @@
 import { EMPTY_PERSON_URL, IMAGE_URL } from '../config';
-import Link from 'next/Link';
+import Link from 'next/link';
 import { PersonCard } from './styles/PersonCard';
 
 const PeopleItem = ({ person }) => {
