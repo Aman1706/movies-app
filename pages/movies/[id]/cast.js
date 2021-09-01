@@ -3,6 +3,9 @@ import axios from 'axios';
 import CastInfo from '../../../components/CastInfo';
 
 const cast = ({ creditsData }) => {
+  if (!creditsData) {
+    return <h1>Loading...</h1>;
+  }
   return (
     <>
       <div>

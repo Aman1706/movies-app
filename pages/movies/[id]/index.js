@@ -3,6 +3,9 @@ import axios from 'axios';
 import MovieInfo from '../../../components/MovieInfo';
 
 const movie = ({ movieData, topCast, recommendationsData }) => {
+  if (!movieData || !topCast || !recommendationsData) {
+    return <h1>Loading...</h1>;
+  }
   return (
     <MovieInfo
       movieData={movieData}

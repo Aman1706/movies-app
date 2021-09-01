@@ -4,7 +4,12 @@ import MovieList from '../../components/MovieList';
 import MovieSearch from '../../components/MovieSearch';
 
 const popular = ({ popularMovies }) => {
+  if (!popularMovies) {
+    return <h1>Loading...</h1>;
+  }
+
   const { results } = popularMovies;
+
   return (
     <>
       <MovieSearch />

@@ -4,6 +4,9 @@ import MovieList from '../../components/MovieList';
 import MovieSearch from '../../components/MovieSearch';
 
 const playing = ({ playingMovies }) => {
+  if (!playingMovies) {
+    return <h1>Loading...</h1>;
+  }
   const { results } = playingMovies;
   return (
     <>
